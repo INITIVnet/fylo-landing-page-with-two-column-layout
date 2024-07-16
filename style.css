@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  /*Colors*/
+
+  /*Primary*/
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desurated-blue: hsl(238, 22%, 44%);
+
+  /*Accent*/
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /*Neutral*/
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-grey: hsl(0, 0%, 75%);
+
+  /*Fonts*/
+  --raleway: "Raleway", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--open-sans);
+}
+
+input::placeholder {
+  color: var(--light-grey);
+}
+
+.nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 25px;
+  justify-content: space-between;
+}
+
+.nav img {
+  height: 30px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 10px;
+}
+
+#hero {
+  display: flex;
+  height: 50vh;
+}
+
+#hero .div-one,
+#hero .div-two {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero .div-one {
+  padding: 45px 22px;
+}
+
+#hero .div-one h1 {
+  font-family: var(--raleway);
+  font-size: 23px;
+  line-height: 33px;
+}
+
+#hero .div-one p {
+  font-size: 11px;
+}
+
+#hero .div-one .form input {
+  font-size: 10px;
+  padding: 6px 10px;
+  width: 50%;
+}
+
+#hero .div-one .form button {
+  background-color: var(--bright-blue);
+  border: none;
+  color: white;
+  font-size: 9px;
+  padding: 8px 45px;
+  border-radius: 1.5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#hero .div-one .form button:active {
+  background-color: rgb(126, 156, 255);
+}
+
+#hero .div-two img {
+  height: 80%;
+  width: 90%;
+}
+
+#section-two {
+  display: flex;
+  height: 50vh;
+}
+
+#section-two .div-four,
+#section-two .div-three {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 22px;
+}
+
+#section-two h1 {
+  font-size: 19px;
+  font-family: var(--raleway);
+  margin-bottom: 20px;
+}
+
+#section-two p {
+  font-size: 9px;
+}
+
+#section-two .link {
+  text-decoration: underline;
+  color: var(--moderate-cyan);
+}
+
+#section-two .link-div {
+  display: flex;
+  align-items: center;
+}
+
+#section-two .link-img {
+  margin-bottom: -5px;
+}
+
+#section-two .message {
+  background-color: var(--light-grayish-blue);
+  height: 15vh;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+
+#section-two .quotes {
+  width: 10px;
+}
+
+#section-two .message p {
+  font-size: 9.5px;
+}
+
+#section-two .profile {
+  display: flex;
+  align-items: center;
+}
+
+#section-two .email {
+  height: 20px;
+  border-radius: 100%;
+  inline-size: block;
+}
+.profile-text {
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+span {
+  font-weight: 400;
+}
+
+#section-two .div-four img {
+  height: 80%;
+  width: 90%;
+}
+
+#section-three {
+  height: 25vh;
+  background-color: var(--desurated-blue);
+  display: flex;
+}
+
+#section-three .div-five,
+#section-three .div-six {
+  display: flex;
+  flex: 1;
+  padding: 40px 50px;
+  align-items: center;
+}
+
+#section-three h1 {
+  font-size: 17px;
+  color: white;
+  font-family: var(--raleway);
+}
+
+#section-three p {
+  font-size: 8.5px;
+  color: var(--light-grey);
+}
+
+#section-three input {
+  font-size: 10px;
+  padding: 5px 10px;
+  width: 200px;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+#section-three button {
+  border: none;
+  background-color: var(--bright-blue);
+  color: white;
+  font-size: 8px;
+  padding: 6px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#section-three button:active {
+  background-color: rgb(126, 156, 255);
+}
+
+#footer {
+  height: 25vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  border-radius: 1px solid red;
+}
+
+.div-ten,
+.div-nine,
+.div-eight,
+.div-seven {
+  padding: 5px 25px;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer .logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#footer .div-seven p {
+  font-size: 8px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+#footer p img {
+  height: 10px;
+}
+
+.div-eight,
+.div-nine {
+  display: flex;
+  justify-content: center;
+  line-height: 5px;
+}
+
+#footer .div-eight p {
+  font-size: 8px;
+}
+
+#footer .div-nine {
+  font-size: 8px;
+}
+
+#footer p:active {
+  color: blue;
+}
+
+#footer p {
+  cursor: pointer;
+}
